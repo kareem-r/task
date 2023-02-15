@@ -1,0 +1,423 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    background-image: url(../images/banner-bg.png);
+}
+.header .container .text{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    
+}
+.header .container .text img:first-child{
+    padding-left: 20px;
+padding-top: 5px;
+}
+.header .container .text img:nth-child(2){
+    padding-right: 10px;
+    padding-top: 5px;
+    cursor: pointer;
+
+}
+.header .container .links{
+    padding-bottom: 20px;
+}
+.header .container .links ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    position: relative;
+    left: -17px;
+}
+.header .container .links ul li{
+    color: #ffffff;
+    cursor: pointer;
+}
+#icon{
+    position: relative;
+    top: 9px;
+    width: 35px;
+}
+
+.header .container .links form input[type="search"]{
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+    margin-top: 5px;
+    position: relative;
+    left: 25px;
+    color:dimgray;
+    padding: 5px;
+
+}
+.header .container .links form input[type="search"]::placeholder:focus{
+    font-size: larger;
+    border: 1px solid dimgray;
+}
+.header .container .links form input[type="search"]:focus{
+    outline: dimgray;
+}
+.games .container .text h1{
+    text-transform: uppercase;
+    font-family: sans-serif;
+
+}
+.games{
+    
+
+    padding-top: 60px;
+
+}
+.games .container .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.games .container .text p{
+    font-weight: bold;
+    position: relative;
+    top: -10px
+}
+
+#A{
+    content: "";
+    border: 1px solid red;
+border-radius: 50%;
+padding: 10px;
+background-color: #191919;
+color: #ffffff;
+z-index: 0;
+position: relative;
+top: -198px;
+font-size: larger;
+font-weight: bold;
+}
+#h1{
+    
+    color: #ffffff;
+    position: relative;
+    top: -200px;
+}
+.games .container .cards .card1 .text pre{
+    
+
+    position: relative;
+    top: -220px;
+    color: #ffffff;
+    line-height: 1.6;
+    /* font-weight: bold; */
+    font-family: sans-serif;
+}
+.games .container .cards .card1 .text a{
+    border-radius: 31px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: red;
+    border: 1px solid red;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    top: -175px;
+}
+.games .container .cards{
+    
+    display: flex;
+    gap: 40px;
+    justify-content: center
+}
+#D{
+    content: "";
+    border: 1px solid red;
+border-radius: 50%;
+padding: 10px;
+background-color: #191919;
+color: #ffffff;
+z-index: 0;
+position: relative;
+top: -198px;
+font-size: larger;
+font-weight: bold;
+}
+#C{
+    content: "";
+    border: 1px solid red;
+border-radius: 50%;
+padding: 10px;
+background-color: #191919;
+color: #ffffff;
+z-index: 0;
+position: relative;
+top: -198px;
+font-size: larger;
+font-weight: bold;
+}
+#img3{
+    height: 410px;
+    width: 305px;
+}
+#btn2{
+    border-radius: 31px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #191919;
+    border: 1px solid red;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    top: -175px;
+}
+#btn2:hover{
+    background-color: red;
+}
+@media(max-width:1246px){
+    .games .container .cards{
+    
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    .games .container .text p {
+        font-weight: bold;
+        position: relative;
+        top: -10px;
+        /* padding-left: 28px; */
+        /* line-height: 1.6; */
+        text-align: center;
+        padding-left: 38px;
+    }
+}
+.play{
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -45px;
+}
+.play  .text h1{
+    text-align: center;
+    color: #ffffff;
+    font-family: sans-serif;
+
+}
+.play  .text h1 img{
+    padding-right: 5px;
+}
+.play  .text p{
+    font-family: math;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.6;
+    align-items: center;
+    font-size:22px;
+    font-weight: normal;
+}
+.play .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 70px;
+    padding-bottom: 85px;
+}
+.play  .cards .card img{
+    border: 1px solid #ffffff;
+    border: 1px solid #ffffff;
+    /* padding: 60PX; */
+    border-radius: 7px;
+    /* width: 0; */
+    height: 50p;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 35px;
+    padding-bottom: 35px
+}
+.play  .cards .card p{
+    color: #ffffff;
+    font-size: larger;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+@media(max-width:1246px){
+    body{
+        width: 100%;
+    }
+    .play{
+        display: flex;
+        flex-direction: column;
+    }
+    .play .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 85px;
+        
+    }
+}
+#play {
+    border-radius: 31px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #121212;
+    border: 1px solid red;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    top: -60px;
+    text-align: center;
+}
+#play:hover{
+    background-color: red;
+}
+.footer{
+    padding-top: 60px;
+    background-color:#252525;
+    padding-bottom: 5px;
+
+}
+.footer .container .btn form input[type="email"]{
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+    margin-top: 5px;
+    position: relative;
+    left: 25px;
+    color:dimgray;
+    padding-right: 425px;
+
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+
+
+    
+
+    
+}
+.footer .container .btn form input[type="email"]::placeholder:focus{
+    font-size: larger;
+    border: 1px solid dimgray;
+}
+.footer .container .btn form input[type="email"]:focus{
+    outline: dimgray;
+}
+.footer .container .btn form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .container .btn form a{
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    left: -70px;
+}
+.footer .container .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+.footer .container .information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 25px;
+    gap: 140px;
+    padding-bottom: 20px;
+}
+.footer .container .information .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.footer .container .information .info span{
+    color: #dbd8d8;
+    padding-left: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.footer .container .information .info img{
+width: 25px;
+}
+.footer .container .information .info:nth-child(3) img{
+    width: 23px;
+
+}
+@media(max-width:1246px){
+    .footer .container .information{
+        display: flex;
+flex-direction: column;
+gap: unset;
+align-items: flex-end;
+
+
+    }
+    #C1{
+        position: relative;
+    left: -100px;
+    }
+    #infob{
+padding-top: 20px  ;
+    }
+    .footer .container .btn form input[type="email"] {
+        border: none;
+        border-bottom: 1px solid #ffffff;
+        background-color: transparent;
+        margin-top: 5px;
+        position: relative;
+        left: 25px;
+        color: dimgray;
+        padding-right: 148px;
+        padding-bottom: 5px;
+        padding-left: -5px;
+        padding-top: 5px;
+    }
+    .footer .container .btn form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 35px;
+    }
+    #C3{
+       padding-left:200px ;
+       margin-right: -57px;
+    padding-top: 15px;
+    }
+    #C2{
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+
+}
+#C3{
+    position: relative;
+    left: -125px;
+}
+
+
